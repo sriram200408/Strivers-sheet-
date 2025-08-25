@@ -8,7 +8,6 @@ public class armstrongnumber {
 
             x /= 10;
         }
-        System.out.println(num);
         if (temp == num) {
             return true;
         } else {
