@@ -1,4 +1,7 @@
 public class checkprime {
+
+    // Time complexity = O(sqrtn)
+    // Space complexity = O(1)
     static boolean isPrime(int x) {
         int sqrt = (int) (Math.sqrt(x));
         int count = 0;
