@@ -1,8 +1,12 @@
 package BasicHashing;
 
+import java.util.HashMap;
 import java.util.Scanner;
+import java.util.*;
 
 public class highnlowfreq {
+
+    // Brute force
     static void frequency(int[] arr) {
         int highest = 0;
         int lowest = 1;
@@ -38,6 +42,38 @@ public class highnlowfreq {
         return;
     }
 
+    // using hashmap
+    static void hashfreq(int[] arr) {
+        Map<Integer, Integer> map = new HashMap<>();
+
+        for (int i = 0; i < arr.length; i++) {
+            if (map.containsKey(arr[i])) {
+                map.put(arr[i], map.get(arr[i]) + 1);
+            } else {
+                map.put(arr[i], 1);
+            }
+        }
+        int maxEle = 0;
+        int minEle = 0;
+        int maxFreq = 0;
+        int minFreq = arr.length;
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            int count = entry.getValue();
+            int element = entry.getKey();
+            if (count > maxFreq) {
+                maxEle = element;
+                maxFreq = count;
+            }
+            if (count < minFreq) {
+                minEle = element;
+                minFreq = count;
+            }
+        }
+
+        System.out.println("The highest frequency element is: " + maxEle);
+        System.out.println("The lowest frequency element is: " + minEle);
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the array size");
@@ -47,6 +83,7 @@ public class highnlowfreq {
             arr[i] = sc.nextInt();
         }
         frequency(arr);
+        hashfreq(arr);
         sc.close();
     }
 }
