@@ -5,8 +5,7 @@ import java.util.Scanner;
 public class selectionsort {
 
     static void swap(int a, int b, int[] arr) {
-        int temp = 0;
-        temp = arr[b];
+        int temp = arr[b];
         arr[b] = arr[a];
         arr[a] = temp;
         return;
@@ -14,13 +13,10 @@ public class selectionsort {
 
     static void selection(int[] arr) {
         int min = 0;
-        int minimum = 0;
         while (min != arr.length - 1) {
-            minimum = arr[min];
             int idx = min;
             for (int i = min + 1; i < arr.length; i++) {
-                if (arr[i] < minimum) {
-                    minimum = arr[i];
+                if (arr[i] < arr[idx]) {
                     idx = i;
                 }
             }
