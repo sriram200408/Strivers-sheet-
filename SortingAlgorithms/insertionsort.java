@@ -1,3 +1,5 @@
+// need to work on the logic again 
+
 package SortingAlgorithms;
 
 import java.util.Scanner;
@@ -14,10 +16,12 @@ public class insertionsort {
         int idx = 1;
         while (idx != arr.length) {
             int i = idx - 1;
+            int curr = idx;
             while (i > -1) {
-                if (arr[idx] < arr[i]) {
-                    swap(arr, idx, i);
-                    idx = i;
+
+                if (arr[curr] < arr[i]) {
+                    swap(arr, curr, i);
+                    curr = i;
 
                 }
                 i--;
