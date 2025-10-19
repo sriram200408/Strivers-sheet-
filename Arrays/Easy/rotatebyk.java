@@ -88,6 +88,6 @@ public class rotatebyk {
             rotate(arr, k, str);
         }
         printarray(arr);
-
+        sc.close();
     }
 }
