@@ -1,4 +1,4 @@
-package LinkedLists;
+package LinkedLists.LinekedLists1D;
 
 import java.util.Scanner;
 
