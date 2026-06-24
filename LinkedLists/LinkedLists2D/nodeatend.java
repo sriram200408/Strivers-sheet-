@@ -48,11 +48,11 @@ public class nodeatend {
             temp.next = mover;
             temp = mover;
         }
-        // Node atend = deleteatend(head);
-        // while (atend != null) {
-        // System.out.print(atend.data + " ");
-        // atend = atend.next;
-        // }
+        Node atend = deleteatend(head);
+        while (atend != null) {
+            System.out.print(atend.data + " ");
+            atend = atend.next;
+        }
         System.out.println(" ");
         Node atstart = deleteatstart(head);
         while (atstart != null) {
