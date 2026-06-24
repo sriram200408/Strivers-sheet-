@@ -1,4 +1,3 @@
-package LinkedLists.LinkedLists2D;
 
 import java.util.Scanner;
 
