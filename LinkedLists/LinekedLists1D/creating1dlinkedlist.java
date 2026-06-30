@@ -2,20 +2,7 @@ package LinkedLists.LinekedLists1D;
 
 import java.util.Scanner;
 
-class Node {
-    int data;
-    Node next;
 
-    Node(int data1, Node next1) {
-        this.data = data1;
-        this.next = next1;
-    }
-
-    Node(int data1) {
-        this.data = data1;
-        this.next = null;
-    }
-}
 
 public class creating1dlinkedlist {
     private static Node createlinkedlist(int[] arr) {

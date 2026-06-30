@@ -2,23 +2,7 @@ package LinkedLists.LinkedLists2D;
 
 import java.util.Scanner;
 
-class Node {
-    int data;
-    Node prev;
-    Node next;
 
-    Node(int data, Node prev, Node next) {
-        this.data = data;
-        this.next = next;
-        this.prev = prev;
-    }
-
-    Node(int data) {
-        this.data = data;
-        this.next = null;
-        this.prev = null;
-    }
-}
 
 public class insertnodeatstart {
     static Node insertatstart(int val, Node head) {
