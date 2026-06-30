@@ -15,8 +15,8 @@ public class floorandceil {
                 ans = mid;
                 end = mid - 1;
             } else {
-                System.out.println("the floor is " + arr[ans]);
-                System.out.println("the ceiling is " + arr[ans]);
+                System.out.println("the floor is " + arr[mid]);
+                System.out.println("the ceiling is " + arr[mid]);
                 return;
             }
         }
